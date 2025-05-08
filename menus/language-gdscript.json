@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle language-gdscript",
+        "command": "language-gdscript:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "language-gdscript",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "language-gdscript:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
