@@ -78,6 +78,14 @@
     'match': '\\b(int|float|bool|String|Vector2|Vector3|Color|Rect2|Array|Dictionary|Resource|Node|Object|RID)\\b'
     'name': 'support.type.gdscript'
   }
+  { # Anotations
+    'match': '@[a-zA-Z_][a-zA-Z0-9_]*'
+    'name': 'meta.annotation.gdscript'
+  }
+  { # Node reference
+    'match': '$[a-zA-Z_][a-zA-Z0-9_]*'
+    'name': 'meta.reference.gdscript'
+  }
   {
     'match': '\\b(?i:(((\\d+(\\.(?=[^a-zA-Z_])\\d*)?|(?<=[^0-9a-zA-Z_])\\.\\d+)(e[\\-\\+]?\\d+)?))J)'
     'name': 'constant.numeric.complex.gdscript'
