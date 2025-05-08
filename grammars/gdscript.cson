@@ -17,6 +17,14 @@
     'name': 'string.quoted.single.gdscript'
   }
   {
+    'match': '\\b(false|true)\\b'
+    'name': 'constant.language.boolean.gdscript'
+  }
+  {
+    'match': '\\b(null)\\b'
+    'name': 'constant.language.null.gdscript'
+  }
+  {
     'begin': '#'
     'beginCaptures': {'0': {'name': 'comment.line.number-sign.gdscript'}}
     'end': '$'
