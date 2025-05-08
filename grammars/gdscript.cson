@@ -1,0 +1,25 @@
+'scopeName': 'source.gdscript'
+'name': 'GDScript'
+'fileTypes': [
+  'gd'
+]
+'patterns': [
+  {
+    'match': '\\b(func|var|if|else|for|while|return|extends|class|pass|break|continue)\\b'
+    'name': 'keyword.control.gdscript'
+  }
+  {
+    'match': '"[^"]*"'
+    'name': 'string.quoted.double.gdscript'
+  }
+  {
+    'match': "'[^']*'"
+    'name': 'string.quoted.single.gdscript'
+  }
+  {
+    'begin': '#'
+    'beginCaptures': {'0': {'name': 'comment.line.number-sign.gdscript'}}
+    'end': '$'
+    'name': 'comment.line.number-sign.gdscript'
+  }
+]
