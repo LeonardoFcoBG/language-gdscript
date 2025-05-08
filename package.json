@@ -2,8 +2,12 @@
   "name": "language-gdscript",
   "main": "./lib/language-gdscript",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "GDScript support for Pulsar",
   "keywords": [
+    "godot",
+    "gdscript",
+    "syntax",
+    "godotengine"
   ],
   "activationCommands": {
     "atom-workspace": "language-gdscript:toggle"
@@ -12,7 +16,16 @@
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+    "pulsar":"*"
   },
+  "grammars":[
+    {
+      "fileTypes":["gd"],
+      "name":"GDScript",
+      "scopeName":"source.gdscript",
+      "path":"./grammars/gdscript.cson"
+    }
+  ],
   "dependencies": {
   }
 }
