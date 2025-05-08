@@ -58,6 +58,10 @@
     'match': '\\b(print|print_debug|printt|str|len|abs|pow|sqrt|randf|randi)\\b'
     'name': 'support.function.builtin.gdscript'
   }
+  { # Language Types
+    'match': '\\b(int|float|bool|String|Vector2|Vector3|Color|Rect2|Array|Dictionary|Resource|Node|Object|RID)\\b'
+    'name': 'support.type.gdscript'
+  }
   {
     'match': '\\b(?i:(((\\d+(\\.(?=[^a-zA-Z_])\\d*)?|(?<=[^0-9a-zA-Z_])\\.\\d+)(e[\\-\\+]?\\d+)?))J)'
     'name': 'constant.numeric.complex.gdscript'
