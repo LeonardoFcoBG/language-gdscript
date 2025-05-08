@@ -54,6 +54,10 @@
     'match': '\\b(false|true|null)\\b'
     'name': 'constant.language.gdscript'
   }
+  { # Build in functions
+    'match': '\\b(print|print_debug|printt|str|len|abs|pow|sqrt|randf|randi)\\b'
+    'name': 'support.function.builtin.gdscript'
+  }
   {
     'match': '\\b(?i:(((\\d+(\\.(?=[^a-zA-Z_])\\d*)?|(?<=[^0-9a-zA-Z_])\\.\\d+)(e[\\-\\+]?\\d+)?))J)'
     'name': 'constant.numeric.complex.gdscript'
