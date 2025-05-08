@@ -86,29 +86,13 @@
     'match': '$[a-zA-Z_][a-zA-Z0-9_]*'
     'name': 'meta.reference.gdscript'
   }
-  {
-    'match': '\\b(?i:(((\\d+(\\.(?=[^a-zA-Z_])\\d*)?|(?<=[^0-9a-zA-Z_])\\.\\d+)(e[\\-\\+]?\\d+)?))J)'
-    'name': 'constant.numeric.complex.gdscript'
-  }
-  {
-    'match': '\\b(?i:(\\d+\\.\\d*(e[\\-\\+]?\\d+)?))(?=[^a-zA-Z_])'
-    'name': 'constant.numeric.float.gdscript'
-  }
-  {
-    'match': '(?<=[^0-9a-zA-Z_])(?i:(\\.\\d+(e[\\-\\+]?\\d+)?))'
-    'name': 'constant.numeric.float.gdscript'
-  }
-  {
+  { # Float
     'match': '\\b(?i:(\\d+e[\\-\\+]?\\d+))'
-    'name': 'constant.numeric.float.gdscript'
+    'name': 'constant.numeric.gdscript'
   }
-  {
-    'match': '\\b(?i:([1-9]+[0-9]*|0)L)'
-    'name': 'constant.numeric.integer.long.decimal.gdscript'
-  }
-  {
+  { # Integer
     'match': '\\b([1-9]+[0-9]*|0)'
-    'name': 'constant.numeric.integer.decimal.gdscript'
+    'name': 'constant.numeric.gdscript'
   }
   {
     'match': '@[a-zA-Z_][a-zA-Z0-9_]*'
