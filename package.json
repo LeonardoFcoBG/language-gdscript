@@ -12,6 +12,9 @@
     "syntax",
     "godotengine"
   ],
+  "activationCommands": {
+    "atom-workspace": "language-gdscript:toggle"
+  },
   "repository": {
     "type":"git",
     "url":"https://github.com/LeonardoFcoBG/language-gdscript"
