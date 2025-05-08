@@ -12,6 +12,10 @@
     'match': '\\b(func|class|class_name|extends|enum|const|var|onready|static)\\b'
     'name': 'keyword.declaration.gdscript'
   }
+  { # Signal
+    'match': '\\b(signal)\\b'
+    'name': 'keyword.other.signal.gdscript'
+  }
   { # Comments
     'match': '"[^"]*"'
     'name': 'string.quoted.double.gdscript'
@@ -58,6 +62,8 @@
     'match': '\\b(print|print_debug|printt|str|len|abs|pow|sqrt|randf|randi)\\b'
     'name': 'support.function.builtin.gdscript'
   }
+
+
   { # Language Types
     'match': '\\b(int|float|bool|String|Vector2|Vector3|Color|Rect2|Array|Dictionary|Resource|Node|Object|RID)\\b'
     'name': 'support.type.gdscript'
