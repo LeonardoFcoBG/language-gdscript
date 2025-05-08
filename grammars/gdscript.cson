@@ -62,8 +62,18 @@
     'match': '\\b(print|print_debug|printt|str|len|abs|pow|sqrt|randf|randi)\\b'
     'name': 'support.function.builtin.gdscript'
   }
-
-
+  { # Function declaration
+    'begin': '\\bfunc\\s+([a-zA-Z_][a-zA-Z0-9_]*)'
+    'beginCaptures':
+      '1':
+        'name': 'entity.name.function.gdscript'
+    'end': '(?=\\(|:)'
+    'name': 'meta.function.gdscript'
+  }
+  { # Function calls
+    'match': '\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=\\()'
+    'name': 'support.function.call.gdscript'
+  }
   { # Language Types
     'match': '\\b(int|float|bool|String|Vector2|Vector3|Color|Rect2|Array|Dictionary|Resource|Node|Object|RID)\\b'
     'name': 'support.type.gdscript'
