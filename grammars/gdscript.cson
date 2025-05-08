@@ -95,7 +95,7 @@
     'name': 'constant.numeric.gdscript'
   }
   {
-    'match': '@[a-zA-Z_][a-zA-Z0-9_]*'
-    'name': 'meta.annotation.gdscript'
+    'match': '\@[a-zA-Z_][a-zA-Z0-9_]*'
+    'name': 'entity.name.tag.gdscript'
   }
 ]
