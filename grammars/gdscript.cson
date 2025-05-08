@@ -50,13 +50,9 @@
     'match': '\\b(?i:(0b[01]+))',
     'name': 'constant.numeric.integer.binary.gdscript'
   }
-  {
-    'match': '\\b(false|true)\\b'
-    'name': 'constant.language.boolean.gdscript'
-  }
-  {
-    'match': '\\b(null)\\b'
-    'name': 'constant.language.null.gdscript'
+  { # Constants
+    'match': '\\b(false|true|null)\\b'
+    'name': 'constant.language.gdscript'
   }
   {
     'match': '\\b(?i:(((\\d+(\\.(?=[^a-zA-Z_])\\d*)?|(?<=[^0-9a-zA-Z_])\\.\\d+)(e[\\-\\+]?\\d+)?))J)'
