@@ -1,32 +1,28 @@
 {
   "name": "language-gdscript",
-  "main": "./lib/language-gdscript",
   "version": "0.1.0",
-  "description": "GDScript support for Pulsar",
-  "engines": {
-    "pulsar":"*"
-  },
+  "description": "GDScript highlighting for Pulsar",
+  "license": "MIT",
   "keywords": [
     "godot",
     "gdscript",
     "syntax",
     "godotengine"
   ],
-  "activationCommands": {
-    "atom-workspace": "language-gdscript:toggle"
+  "repository": "https://github.com/LeonardoFcoBG/language-gdscript",
+  "engines": {
+		"atom": ">=1.0.0 <2.0.0"
   },
-  "repository": {
-    "type":"git",
-    "url":"https://github.com/LeonardoFcoBG/language-gdscript"
-  },
-  "license": "MIT",
   "grammars":[
     {
       "fileTypes":["gd"],
       "name":"GDScript",
-      "scopeName":"source.gdscript",
+      "scopeName":"gdscript",
       "path":"./grammars/gdscript.cson"
     }
+  ],
+  "activationHooks":[
+    "language-gdscript:grammar-used"
   ],
   "dependencies": {
   }
